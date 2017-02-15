@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.abc.nerolac.activity.SingUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.6"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="2.8"
+                    android:orientation="vertical"
+                    android:weightSum="5"
+                    android:layout_height="0dp">
+
+                    <LinearLayout
+                        android:layout_marginTop="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="3.5"
+                        android:layout_height="0dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_marginRight="70dp"
+                                android:layout_width="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/logo_1"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1.2"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:layout_height="0dp">
+                        <EditText
+                            android:id="@+id/editEmailId"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="70dp"
+                            android:paddingLeft="20dp"
+                            android:hint="Email ID"
+                            android:textColorHint="#b1b1b1"
+                            android:textColor="#000"
+                            android:background="@drawable/username_box"
+                            android:layout_height="55dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1.2"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:layout_height="0dp">
+
+                        <EditText
+                            android:id="@+id/editUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:paddingLeft="20dp"
+                            android:textColor="#000"
+                            android:hint="Username same as Email"
+                            android:textColorHint="#b1b1b1"
+                            android:background="@drawable/username_box"
+                            android:layout_height="55dp" />
+                        <!--<TextView
+                            android:id="@+id/editUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:paddingLeft="20dp"
+                            android:textColor="#000"
+                            android:hint="Create Username"
+                            android:textColorHint="#b1b1b1"
+                            android:background="@drawable/username_box"
+                            android:layout_height="55dp" />-->
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1.2"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:layout_height="0dp">
+
+                        <EditText
+                            android:maxLength="6"
+                            android:inputType="textPassword"
+                            android:id="@+id/editPassowrd"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:paddingLeft="20dp"
+                            android:textColor="#000"
+                            android:hint="Create Password(6 Charachter)"
+                            android:textColorHint="#b1b1b1"
+                            android:background="@drawable/username_box"
+                            android:layout_height="55dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1.2"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:layout_height="0dp">
+
+                        <Spinner
+                            android:background="@drawable/username_box"
+                            android:layout_marginLeft="70dp"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/spinnerSecurityQuestion"
+                            android:textColor="#000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1.2"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:layout_height="0dp">
+
+                        <EditText
+                            android:inputType="textPassword"
+                            android:id="@+id/editSecurityAnswer"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:paddingLeft="20dp"
+                            android:textColor="#000"
+                            android:hint="Security Question's Answer"
+                            android:textColorHint="#b1b1b1"
+                            android:background="@drawable/username_box"
+                            android:layout_height="55dp" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:layout_height="25dp">
+
+                        <Button
+                            android:layout_weight="1.2"
+                            android:layout_marginTop="15dp"
+                            android:onClick="buttonRegister"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="75dp"
+                            android:paddingLeft="20dp"
+                            android:textColor="#fff"
+                            android:gravity="center_vertical|left"
+                            android:text="Register"
+                            android:textAllCaps="false"
+                            android:background="@android:color/black"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/nerolac_register"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/footer_blob"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp" />
+
+</RelativeLayout>

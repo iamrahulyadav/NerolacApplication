@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abc.nerolac">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.VideoActivity.EquipMarketingResourceVideoActivity"
+            android:label="@string/title_activity_video"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.AwarePaintIndutryPdfActivity"
+            android:label="@string/title_activity_pdfactivity" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.HtmlActivity.htmlactivity"
+            android:label="@string/title_activity_htmlactivity" />
+        <activity
+            android:name=".activity.SingUpActivity"
+            android:label="@string/title_activity_sing_up"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.BlogActivity"
+            android:label="@string/title_activity_blog" />
+        <activity
+            android:name=".activity.AwareActivity"
+            android:label="@string/title_activity_aware"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.EquipActivity"
+            android:label="@string/title_activity_equip"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AssistActivity"
+            android:label="@string/title_activity_assist"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AwarePaintIndustryActivity"
+            android:label="@string/title_activity_aware_details"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AwarePricingActivity"
+            android:label="@string/title_activity_aware_pricing"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AwareCorporateCommunicationActivity"
+            android:label="@string/title_activity_aware_corporate"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AwareHumanResourseActivity"
+            android:label="@string/title_activity_aware_human_resourse"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.EquipShadeCardsActivity"
+            android:label="@string/title_activity_equip_shade_cards"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.EquipPdsActivity"
+            android:label="@string/title_activity_equip_pds"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.EquipDealerClubActivity"
+            android:label="@string/title_activity_equip_dealer_club"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.EquipInfluencerProgramActivity"
+            android:label="@string/title_activity_equip_influencer_program"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.EquipStoreMarketingResourceActivity"
+            android:label="@string/title_activity_equip_store_marketing_resource"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.EquipStoreDisplaySampleActivity"
+            android:label="@string/title_activity_equip_store_display_sample"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.AwareCorporateCommunicationPdfActivity"
+            android:label="@string/title_activity_ho_communication_pdf"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.AwareHumanResourcePdfActivity"
+            android:label="@string/title_activity_human_resource_pdf"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.AwareHumanResourcePdfActivity1"
+            android:label="@string/title_activity_human_resource_pdf1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.AwareHumanResourcePdfActivity2"
+            android:label="@string/title_activity_human_resource_pdf2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.AwarePricingPdfActivity1"
+            android:label="@string/title_activity_aware_pricing_pdf1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.AwarePricingPdfActivity2"
+            android:label="@string/title_activity_aware_pricing_pdf2" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.EquipKnplProductPdfActivity"
+            android:label="@string/title_activity_equip_knpl_product_pdf"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.EquipCompetitionComparisonPdfActivity"
+            android:label="@string/title_activity_equip_competition_comparison_pdf"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.EquipApplicationTechniquesPdfActivity"
+            android:label="@string/title_activity_equip_application_techniques_pdf"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.EquipFanDecksPdfActivity"
+            android:label="@string/title_activity_equip_fan_decks_pdf"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.EquipMsdnPdfActivity"
+            android:label="@string/title_activity_equip_msdn_pdf"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.EquipColorOfTheYearPdfActivity"
+            android:label="@string/title_activity_equip_color_of_the_year_pdf"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AssistCustomerActivity"
+            android:label="@string/title_activity_assist_customer"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AssistKeyInfoActivity"
+            android:label="@string/title_activity_assist_key_info"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AssistReportsActivity"
+            android:label="@string/title_activity_assist_reports"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AssistSelfActivity"
+            android:label="@string/title_activity_assist_self"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AssistTransactionActivity"
+            android:label="@string/title_activity_assist_transaction"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.VideoActivity.AssistCustomerVideoActivity"
+            android:label="@string/title_activity_assist_customer_video"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.VideoActivity.AssistKeyInfoVideoActivity"
+            android:label="@string/title_activity_assist_key_info_video"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.VideoActivity.AssistReportsVideoActivity"
+            android:label="@string/title_activity_assist_reports_video"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.VideoActivity.AssistSelfVideoActivity"
+            android:label="@string/title_activity_assist_self_video"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.VideoActivity.AssistTransactionVideoActivity"
+            android:label="@string/title_activity_assist_transaction_video"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AssistTransactionMarketingModuleActivity"
+            android:label="@string/title_activity_assist_transaction_marketing_module"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AssistTransactionProjectModuleActivity"
+            android:label="@string/title_activity_assist_transaction_project_module"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AssistTransactionSupportActivity"
+            android:label="@string/title_activity_assist_transaction_support"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.VideoActivity.AssistTransactionMarketingVideoActivity"
+            android:label="@string/title_activity_assist_transaction_marketin_video"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.VideoActivity.AssistTransactioProjectModuleVideoActivity"
+            android:label="@string/title_activity_assist_transactio_project_module_video"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.VideoActivity.AssistTransactioSupportVideoActivity"
+            android:label="@string/title_activity_assist_transactio_support_video"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.EquiptShadeCardsPdfActivity"
+            android:label="@string/title_activity_equipt_shade_cards_pdf"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.EquipPdsPdfActivity"
+            android:label="@string/title_activity_equip_pds_pdf"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.EquipDealerClubExcelActivity"
+            android:label="@string/title_activity_equip_dealer_club_excel"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.EquipStoreDisplayPdfActivity"
+            android:label="@string/title_activity_equip_store_display_pdf"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.VideoActivity.AssistTransactionMarketingVideoActivity1"
+            android:label="@string/title_activity_assist_transaction_marketing_video1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AssistOtherActivity"
+            android:label="@string/title_activity_assist_other"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.VideoActivity.AssistOtherVideoActivity"
+            android:label="@string/title_activity_assist_other_video" />
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:label="@string/title_activity_forgot_password" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.AwareHumanResourcePdfActivity11"
+            android:label="@string/title_activity_aware_human_resource_pdf11" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.VideoActivity.AssistTransactionVisitVideoActivity"
+            android:label="@string/title_activity_assist_transaction_visit" />
+        <activity
+            android:name=".activity.AssistVisitActivity"
+            android:label="@string/title_activity_assist_visit" />
+        <activity
+            android:name=".activity.EquipPoliciesActivity"
+            android:label="@string/title_activity_equip_policies" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.EquipPoliciesPdfActivity"
+            android:label="@string/title_activity_equip_policies_pdf" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.LoginHowItWorkPdfActivity"
+            android:label="@string/title_activity_login_how_it_work_pdf" />
+        <activity
+            android:name=".activity.AssistHelpDeskActivity"
+            android:label="@string/title_activity_assist_help_desk" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.AssistHelpDeskPdfActivity"
+            android:label="@string/title_activity_assist_help_desk_pdf" />
+        <activity
+            android:name=".activity.AssistInductionModuleActivity"
+            android:label="@string/title_activity_assist_induction_module" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.AssistInductionModulePdfActivity"
+            android:label="@string/title_activity_assist_induction_module_pdf" />
+        <activity
+            android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.EquipOtherPdfActivity"
+            android:label="@string/title_activity_equip_other_pdf" />
+        <activity android:name=".activity.AwareCorporateImpressionNewsLetterActivity" />
+        <activity android:name=".activity.AwareCorporateCorporateCommunicationActivity" />
+        <activity android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.AwareCorporateCorporatePdfActivity" />
+        <activity android:name=".activity.HtmlPdfVedioReadingActivity.PdfActivity.AwareCorporateImpressionPdfActivity"></activity>
+    </application>
+
+</manifest>

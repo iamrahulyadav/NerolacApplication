@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aware_bg1"
+    tools:context="com.abc.nerolac.activity.EquipActivity">
+
+    <ImageView
+        android:layout_marginLeft="58dp"
+        android:id="@+id/imageLogo"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/logo_2"
+        android:layout_width="340dp"
+        android:layout_height="56dp" />
+
+    <LinearLayout
+
+        android:layout_marginTop="34dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="275dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Theme of 2016-17"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Aggressive Growth:"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Confidently March Ahead"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="800dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imageHome"
+            android:src="@drawable/home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="740dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:src="@drawable/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="860dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imageLogout"
+            android:src="@drawable/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="39dp"
+        android:layout_marginLeft="650dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#b3b3b3"
+            android:id="@+id/textBack"
+            android:textSize="18dp"
+            android:text="Back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center"
+            android:textColor="#b3b3b3"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textUserName"
+            android:textSize="18dp"
+            android:text="Hello User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--<LinearLayout
+            android:id="@+id/linearPaintIndustry"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="23dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/aware_btn1"
+                android:id="@+id/buttonPaintIndustry"
+                android:layout_width="275dp"
+                android:layout_height="105dp" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/linearHumanResource"
+            android:id="@+id/linearHoCommunication"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="23dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/aware_btn2"
+                android:id="@+id/buttonCorporateCommunication"             android:layout_width="275dp"
+                android:layout_height="105dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearHumanResource"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="23dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/aware_btn3"
+                android:id="@+id/buttonHumanResource"
+                android:layout_width="275dp"
+                android:layout_height="105dp" />
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearPricing"
+            android:layout_marginTop="480dp"
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/aware_btn4"
+                android:layout_marginLeft="26dp"
+                android:id="@+id/buttonPricing"
+                android:layout_width="275dp"
+                android:layout_height="105dp" />
+        </LinearLayout>-->
+
+    </RelativeLayout>
+
+    <!--<ImageView-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:src="@drawable/aware_bg1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+</RelativeLayout>

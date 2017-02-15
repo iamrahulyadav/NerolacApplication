@@ -1,0 +1,176 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/assist_bg1"
+    tools:context="com.abc.nerolac.activity.EquipActivity">
+
+    <ImageView
+
+        android:layout_marginLeft="58dp"
+        android:id="@+id/imageLogo"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/logo_2"
+        android:layout_width="340dp"
+        android:layout_height="56dp" />
+
+    <LinearLayout
+
+        android:layout_marginTop="34dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="275dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Theme of 2016-17"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Aggressive Growth:"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Confidently March Ahead"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="800dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imageHome"
+            android:src="@drawable/home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="740dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:src="@drawable/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="860dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imageLogout"
+            android:src="@drawable/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="58dp"
+        android:layout_below="@+id/imageLogo"
+        android:background="@drawable/assist_btn12"
+        android:id="@+id/buttonInductionModule"
+        android:layout_width="200dp"
+        android:layout_height="105dp" />
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/buttonInductionModule"
+        android:layout_marginLeft="58dp"
+        android:background="@drawable/assist_btn1"
+        android:id="@+id/buttonCustomer"
+        android:layout_width="200dp"
+        android:layout_height="105dp" />
+
+    <Button
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/buttonInductionModule"
+        android:layout_toRightOf="@+id/buttonCustomer"
+        android:background="@drawable/assist_btn2"
+        android:id="@+id/buttonKeyInfo"
+        android:layout_width="200dp"
+        android:layout_height="105dp" />
+
+    <Button
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/buttonInductionModule"
+        android:layout_toRightOf="@+id/buttonKeyInfo"
+        android:background="@drawable/assist_btn3"
+        android:id="@+id/buttonReports"
+        android:layout_width="200dp"
+        android:layout_height="105dp" />
+
+    <Button
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/buttonInductionModule"
+        android:layout_toRightOf="@+id/buttonReports"
+        android:background="@drawable/assist_btn4"
+        android:id="@+id/buttonSelf"
+        android:layout_width="200dp"
+        android:layout_height="105dp" />
+
+    <Button
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/buttonCustomer"
+        android:background="@drawable/assist_btn5"
+        android:id="@+id/buttonTransaction"
+        android:layout_width="200dp"
+        android:layout_height="105dp" />
+
+    <Button
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/buttonCustomer"
+        android:layout_toRightOf="@+id/buttonTransaction"
+        android:background="@drawable/assist_btn9"
+        android:id="@+id/buttonOther"
+        android:layout_width="200dp"
+        android:layout_height="105dp" />
+
+    <Button
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/buttonCustomer"
+        android:layout_toRightOf="@+id/buttonOther"
+        android:background="@drawable/assist_btn11"
+        android:id="@+id/buttonHelpDesk"
+        android:layout_width="200dp"
+        android:layout_height="105dp" />
+
+</RelativeLayout>
+

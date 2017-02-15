@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    tools:context="com.abc.nerolac.activity.MenuActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="570dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imageLogout"
+            android:src="@drawable/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:textColor="@android:color/transparent"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />-->
+
+    <Button
+        android:layout_marginLeft="43dp"
+        android:layout_width="600dp"
+        android:layout_height="113dp"
+        android:id="@+id/buttonAware"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="185dp" />
+
+    <Button
+        android:layout_width="600dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonEquip"
+        android:layout_below="@+id/buttonAware"
+        android:layout_marginLeft="43dp" />
+
+    <Button
+        android:layout_width="600dp"
+        android:layout_height="113dp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="23dp"
+        android:id="@+id/buttonAssist"
+        android:layout_below="@+id/buttonEquip"
+        android:layout_marginLeft="43dp" />
+
+    <TextView
+        android:textColor="#00abbf"
+        android:layout_marginLeft="43dp"
+        android:layout_below="@+id/buttonAssist"
+        android:id="@+id/marque_scrolling_text"
+        android:layout_width="430dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Create a Marquee (Scrolling Text) in Android Using TextView. Android Marquee (Scrolling Text) Tutorial with Example"
+        android:textSize="22sp" />
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="18sp"
+        android:id="@+id/logout"
+        android:textColor="#000"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="43dp"
+        android:layout_below="@+id/buttonAssist" />-->
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/footer_blob"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp" />
+
+</RelativeLayout>

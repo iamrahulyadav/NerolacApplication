@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Nerolac KM</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_pdfactivity">pdfactivity</string>
+    <string name="title_activity_htmlactivity">htmlactivity</string>
+    <string name="title_activity_sing_up">SingUpActivity</string>
+    <string name="title_activity_blog">BlogActivity</string>
+    <string name="title_activity_aware">AwareActivity</string>
+    <string name="title_activity_equip">EquipActivity</string>
+    <string name="title_activity_assist">AssistActivity</string>
+    <string name="title_activity_aware_details">AwareDetailsActivity</string>
+    <string name="title_activity_aware_pricing">AwarePricingActivity</string>
+    <string name="title_activity_aware_corporate">AwareCorporateActivity</string>
+    <string name="title_activity_aware_human_resourse">AwareHumanResourseActivity</string>
+    <string name="title_activity_equip_shade_cards">EquipShadeCards</string>
+    <string name="title_activity_equip_pds">EquipPdsActivity</string>
+    <string name="title_activity_equip_dealer_club">EquipDealerClubActivity</string>
+    <string name="title_activity_equip_influencer_program">EquipInfluencerProgramActivity</string>
+    <string name="title_activity_equip_store_marketing_resource">
+        EquipStoreMarketingResourceActivity
+    </string>
+    <string name="title_activity_equip_store_display_sample">EquipStoreDisplaySampleActivity
+    </string>
+    <string name="title_activity_ho_communication_pdf">HoCommunicationPdfActivity</string>
+    <string name="title_activity_human_resource_pdf">HumanResourcePdfActivity</string>
+    <string name="title_activity_human_resource_pdf1">HumanResourcePdfActivity1</string>
+    <string name="title_activity_human_resource_pdf2">HumanResourcePdfActivity2</string>
+    <string name="title_activity_aware_pricing_pdf1">AwarePricingPdfActivity1</string>
+    <string name="title_activity_aware_pricing_pdf2">AwarePricingPdfActivity2</string>
+    <string name="title_activity_equip_knpl_product_pdf">EquipKnplProductPdfActivity</string>
+    <string name="title_activity_equip_competition_comparison_pdf">
+        EquipCompetitionComparisonPdfActivity
+    </string>
+    <string name="title_activity_equip_application_techniques_pdf">
+        EquipApplicationTechniquesPdfActivity
+    </string>
+    <string name="title_activity_equip_fan_decks_pdf">EquipFanDecksPdfActivity</string>
+    <string name="title_activity_equip_msdn_pdf">EquipMsdnPdfActivity</string>
+    <string name="title_activity_equip_color_of_the_year_pdf">EquipColorOfTheYearPdfActivity
+    </string>
+    <string name="title_activity_assist_customer">AssistCustomerActivity</string>
+    <string name="title_activity_assist_key_info">AssistKeyInfoActivity</string>
+    <string name="title_activity_assist_reports">AssistReportsActivity</string>
+    <string name="title_activity_assist_self">AssistSelfActivity</string>
+    <string name="title_activity_assist_transaction">AssistTransactionActivity</string>
+    <string name="title_activity_assist_customer_video">AssistCustomerVideoActivity</string>
+    <string name="title_activity_assist_key_info_video">AssistKeyInfoVideoActivity</string>
+    <string name="title_activity_assist_reports_video">AssistReportsVideoActivity</string>
+    <string name="title_activity_assist_self_video">AssistSelfVideoActivity</string>
+    <string name="title_activity_assist_transaction_video">AssistTransactionVideoActivity</string>
+    <string name="title_activity_assist_transaction_marketing_module">
+        AssistTransactionMarketingModuleActivity
+    </string>
+    <string name="title_activity_assist_transaction_project_module">
+        AssistTransactionProjectModuleActivity
+    </string>
+    <string name="title_activity_assist_transaction_support">AssistTransactionSupportActivity
+    </string>
+    <string name="title_activity_assist_transaction_marketin_video">
+        AssistTransactionMarketinVideoActivity
+    </string>
+    <string name="title_activity_assist_transactio_project_module_video">
+        AssistTransactioProjectModuleVideoActivity
+    </string>
+    <string name="title_activity_assist_transactio_support_video">
+        AssistTransactioSupportVideoActivity
+    </string>
+    <string name="title_activity_equipt_shade_cards_pdf">EquiptShadeCardsPdfActivity</string>
+    <string name="title_activity_equip_pds_pdf">EquipPdsPdfActivity</string>
+    <string name="title_activity_equip_dealer_club_excel">EquipDealerClubExcelActivity</string>
+    <string name="title_activity_equip_store_display_pdf">EquipStoreDisplayPdfActivity</string>
+    <string name="title_activity_assist_transaction_marketing_video1">
+        AssistTransactionMarketingVideoActivity1
+    </string>
+    <string name="title_activity_assist_other">AssistOtherActivity</string>
+    <string name="title_activity_assist_other_video">AssistOtherVideoActivity</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="title_activity_aware_human_resource_pdf11">AwareHumanResourcePdfActivity11
+    </string>
+    <string name="title_activity_assist_transaction_visit">AssistTransactionVisitActivity</string>
+    <string name="title_activity_assist_visit">AssistVisitActivity</string>
+    <string name="title_activity_equip_policies">EquipPoliciesActivity</string>
+    <string name="title_activity_equip_policies_pdf">EquipPoliciesPdfActivity</string>
+    <string name="title_activity_login_how_it_work_pdf">LoginHowItWorkPdfActivity</string>
+    <string name="title_activity_assist_help_desk">AssistHelpDeskActivity</string>
+    <string name="title_activity_assist_help_desk_pdf">AssistHelpDeskPdfActivity</string>
+    <string name="title_activity_assist_induction_module">AssistInductionModuleActivity</string>
+    <string name="title_activity_assist_induction_module_pdf">AssistInductionModulePdfActivity
+    </string>
+    <string name="title_activity_equip_other_pdf">EquipOtherPdfActivity</string>
+
+
+</resources>

@@ -1,0 +1,175 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/equip_bg"
+    tools:context="com.abc.nerolac.activity.AwarePaintIndustryActivity">
+
+    <LinearLayout
+        android:layout_marginLeft="58dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/logo_2"
+            android:layout_width="340dp"
+            android:layout_height="56dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_marginTop="34dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="275dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Theme of 2016-17"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Aggressive Growth:"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Confidently March Ahead"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="58dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/textListViewTitle"
+            android:textColor="#000000"
+            android:layout_marginTop="120dp"
+            android:textSize="22dp"
+            android:text="List View Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="160dp"
+        android:layout_width="800dp"
+        android:background="#00abbf"
+        android:layout_height="2dp" />
+
+    <ListView
+        android:layout_marginBottom="65dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginLeft="58dp"
+        android:id="@+id/listView"
+        android:layout_marginTop="180dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        android:dividerHeight="1dp"
+    </ListView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="800dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imageHome"
+            android:src="@drawable/home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="740dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:src="@drawable/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="860dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imageLogout"
+            android:src="@drawable/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayout"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="39dp"-->
+        <!--android:layout_marginLeft="720dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+            <!--android:textColor="#b3b3b3"-->
+            <!--android:id="@+id/textBack"-->
+            <!--android:textSize="18dp"-->
+            <!--android:text="Back"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<TextView-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#b3b3b3"-->
+            <!--android:layout_marginLeft="35dp"-->
+            <!--android:id="@+id/textLogout"-->
+            <!--android:textSize="18dp"-->
+            <!--android:text="Logout"-->
+            <!--android:layout_width="130dp"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/footer_blob"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp" />
+
+
+</RelativeLayout>
