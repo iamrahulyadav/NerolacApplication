@@ -17,26 +17,32 @@ public class User  {
 
     public static final String TABLE_NAME = "User";
     public static final String COL_USER_ID = "UserId";
+    public static final String COL_NAME = "Name";
+    public static final String COL_USER_MOBILE_NUMBER = "MobileNumber";
+    public static final String COL_USER_TERRITORY = "Territory";
     public static final String COL_EMAIL_ID = "EmailId";
-    public static final String COL_USER_NAME = "UserName";
+
     public static final String COL_PASSWORD = "Password";
     public static final String COL_SECURITY_QUESTION = "SecurityQuestion";
     public static final String COL_SECURITY_QUESTION_ANSWER = "SecurityQuestionAnswer";
 
     private int userId;
+    private String name;
+    private String mobileNumber;
+    private String territory;
     private String emailID;
-    private String userName;
+
     private String userPassword;
     private String securityQuestion;
     private String securityQuestionAnswer;
 
-    public String getForgotPassword(Context context,String userName,String securityQuestion,String securityAnswer)
+    public String getForgotPassword(Context context,String emailID,String securityQuestion,String securityAnswer)
     {
         DBHelper dbHelper = new DBHelper(context);
         SQLiteDatabase database = dbHelper.getWritableDatabase();
 
         String query = "select * from " + TABLE_NAME + " WHERE "
-                + COL_USER_NAME + " = '" + userName + "' and "
+                + COL_EMAIL_ID + " = '" + emailID + "' and "
                 + COL_SECURITY_QUESTION + " = '" + securityQuestion + "' and "
                 + COL_SECURITY_QUESTION_ANSWER + " = '" + securityAnswer + "'";
 
@@ -51,7 +57,7 @@ public class User  {
 
         cursor.moveToFirst();
 
-        String name = cursor.getString(cursor.getColumnIndex(COL_USER_NAME));
+        String emailId = cursor.getString(cursor.getColumnIndex(COL_EMAIL_ID));
         String question = cursor.getString(cursor.getColumnIndex(COL_SECURITY_QUESTION));
         String answer = cursor.getString(cursor.getColumnIndex(COL_SECURITY_QUESTION_ANSWER));
 
@@ -72,17 +78,18 @@ public class User  {
         SQLiteDatabase database = dbHelper.getWritableDatabase();
 
         String query = "select * from " + TABLE_NAME + " WHERE "
-                + COL_USER_NAME + " = '" + userName + "' and "
+                + COL_EMAIL_ID + " = '" + emailID + "' and "
                 + COL_PASSWORD + " = '" + userPassword + "'";
         /*
         String query = " select * from " + TABLE_NAME + " where " + COL_USER_NAME + " = '" + userName + "' and "
                 + COL_PASSWORD + " = '" + userPassword + "'";
         */
         Cursor cursor = database.rawQuery(query,null);
+
         if(!cursor.isAfterLast()) {
             cursor.moveToNext();
 
-            String userName = cursor.getString(cursor.getColumnIndex(COL_USER_NAME));
+            String emailId = cursor.getString(cursor.getColumnIndex(COL_EMAIL_ID));
             int userId = cursor.getInt(cursor.getColumnIndex(COL_USER_ID));
 
             /*PreferenceManager.getDefaultSharedPreferences(context).edit()
@@ -114,12 +121,12 @@ public class User  {
 
         // select * from table where userName = 'amit';
         String query = "select * from " + TABLE_NAME + " where "
-                + COL_USER_NAME + " = '"+ userName +"'";
+                + COL_EMAIL_ID + " = '"+ emailID +"'";
 
         Cursor cursor = db.rawQuery(query, null);
 
         if(!cursor.isAfterLast()) {
-            Toast.makeText(context,"User already exixt",Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"Email Id already exixt",Toast.LENGTH_SHORT).show();
             result = false;
         }else {
             /*
@@ -131,8 +138,11 @@ public class User  {
             */
 
             ContentValues contentValues = new ContentValues();
+            contentValues.put(COL_NAME,name);
+            contentValues.put(COL_USER_MOBILE_NUMBER,mobileNumber);
+            contentValues.put(COL_USER_TERRITORY,territory);
             contentValues.put(COL_EMAIL_ID, emailID);
-            contentValues.put(COL_USER_NAME, userName);
+            //contentValues.put(COL_USER_NAME, userName);
             contentValues.put(COL_PASSWORD, userPassword);
             contentValues.put(COL_SECURITY_QUESTION,securityQuestion);
             contentValues.put(COL_SECURITY_QUESTION_ANSWER,securityQuestionAnswer);
@@ -155,10 +165,13 @@ public class User  {
     public User() {
     }
 
-    public User(int userId, String emailID, String userName, String userPassword, String securityQuestion, String securityQuestionAnswer) {
+    public User(int userId, String name, String mobileNumber, String territory, String emailID, String userPassword, String securityQuestion, String securityQuestionAnswer) {
         this.userId = userId;
+        this.name = name;
+        this.mobileNumber = mobileNumber;
+        this.territory = territory;
         this.emailID = emailID;
-        this.userName = userName;
+
         this.userPassword = userPassword;
         this.securityQuestion = securityQuestion;
         this.securityQuestionAnswer = securityQuestionAnswer;
@@ -172,6 +185,30 @@ public class User  {
         this.userId = userId;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+    public String getTerritory() {
+        return territory;
+    }
+
+    public void setTerritory(String territory) {
+        this.territory = territory;
+    }
+
     public String getEmailID() {
         return emailID;
     }
@@ -180,15 +217,7 @@ public class User  {
         this.emailID = emailID;
     }
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getUserPassword() {
+     public String getUserPassword() {
         return userPassword;
     }
 

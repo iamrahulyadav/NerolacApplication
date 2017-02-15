@@ -21,7 +21,7 @@ import com.abc.nerolac.utility.Constants;
 public class LoginActivity extends AppCompatActivity {
 
     Button buttonLogin;
-    EditText userName, userPassword;
+    EditText editEmailId, EditPassword;
     //CheckBox checkboxRememberMe;
     TextView textRegister,textForgotPassword, knowAboutKnowledgeManagement, enterLoginDetails;
 
@@ -74,10 +74,10 @@ public class LoginActivity extends AppCompatActivity {
 
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
 
-        userName = (EditText) findViewById(R.id.uname);
-        userName.setText(preferences.getString(Constants.LOGIN_USER_NAME,null));
+        editEmailId = (EditText) findViewById(R.id.uname);
+        editEmailId.setText(preferences.getString(Constants.LOGIN_USER_NAME,null));
 
-        userPassword = (EditText) findViewById(R.id.upassword);
+        EditPassword = (EditText) findViewById(R.id.upassword);
         //checkboxRememberMe = (CheckBox) findViewById(R.id.checkboxRememberMe);
 
         buttonLogin = (Button) findViewById(R.id.buttonLogin);
@@ -86,14 +86,15 @@ public class LoginActivity extends AppCompatActivity {
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (userName.getText().toString().length() == 0) {
+                if (editEmailId.getText().toString().length() == 0) {
                     Toast.makeText(LoginActivity.this, "enter user name", Toast.LENGTH_SHORT).show();
-                } else if (userPassword.getText().toString().length() == 0) {
+                } else if (EditPassword.getText().toString().length() == 0) {
                     Toast.makeText(LoginActivity.this, "enter password", Toast.LENGTH_SHORT).show();
                 } else {
                     User user = new User();
-                    user.setUserName(userName.getText().toString());
-                    user.setUserPassword(userPassword.getText().toString());
+
+                    user.setEmailID(editEmailId.getText().toString());
+                    user.setUserPassword(EditPassword.getText().toString());
                     /*if (user.authenticate(LoginActivity.this, checkboxRememberMe.isChecked()) == true) {
                         Intent ij = new Intent(LoginActivity.this, MenuActivity.class);
                         startActivity(ij);
@@ -101,6 +102,7 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"Invalid User name ot password",Toast.LENGTH_SHORT).show();
                     }*/
                     if (user.authenticate(LoginActivity.this) == true) {
+
                         Intent ij = new Intent(LoginActivity.this, MenuActivity.class);
 
                         ij.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -151,8 +153,8 @@ public class LoginActivity extends AppCompatActivity {
 
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
 
-        userName = (EditText) findViewById(R.id.uname);
-        userName.setText(preferences.getString(Constants.LOGIN_USER_NAME, null));
+        editEmailId = (EditText) findViewById(R.id.uname);
+        editEmailId.setText(preferences.getString(Constants.LOGIN_USER_NAME, null));
 
         /*intent = getIntent();
         userName.setText(intent.getStringExtra("UserName"));*/

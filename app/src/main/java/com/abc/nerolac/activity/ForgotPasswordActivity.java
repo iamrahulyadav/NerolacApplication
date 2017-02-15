@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 public class ForgotPasswordActivity extends AppCompatActivity {
 
-    EditText editUserName, editSecurityQuestion, editSeucrityQuestionAnswer;
+    EditText editEmail, editSecurityQuestion, editSeucrityQuestionAnswer;
     TextView textSetPassword;
     Button getPassword;
 
@@ -34,7 +34,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
 
-        editUserName = (EditText) findViewById(R.id.editUserName);
+        editEmail = (EditText) findViewById(R.id.editEmailId);
 
         questionArrayList = new ArrayList<>();
         questionArrayList.add("What is your pet name?");
@@ -58,7 +58,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
                 User user = new User();
 
-                String userName = editUserName.getText().toString();
+                String emailId = editEmail.getText().toString();
                 /*spinnerSecurityQuestion.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -74,7 +74,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                 String securityQuestion = spinnerSecurityQuestion.getSelectedItem().toString();
                 String securityAnswer = editSeucrityQuestionAnswer.getText().toString();
 
-                String password = user.getForgotPassword(ForgotPasswordActivity.this,userName,securityQuestion,securityAnswer);
+                String password = user.getForgotPassword(ForgotPasswordActivity.this, emailId, securityQuestion,securityAnswer);
 
                 textSetPassword.setText(password);
             }

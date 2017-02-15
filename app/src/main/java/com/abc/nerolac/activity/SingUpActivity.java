@@ -30,7 +30,9 @@ import static com.abc.nerolac.model.User.*;
 
 public class SingUpActivity extends AppCompatActivity {
 
-    EditText editEmailId, editUserName, editPassowrd, editSecurityAnswer;
+    EditText editEmailId, editPassowrd, editSecurityAnswer;
+
+    EditText editName, editMobile, editTerritory;
 
     Spinner spinnerSecurityQuestion;
     ArrayList<String> questionArrayList;
@@ -43,12 +45,16 @@ public class SingUpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sing_up);
 
         questionArrayList = new ArrayList<>();
+
+        editName = (EditText) findViewById(R.id.editName);
+        editMobile = (EditText) findViewById(R.id.editMobile);
+        editTerritory = (EditText) findViewById(R.id.editTerritory);
         editEmailId = (EditText) findViewById(R.id.editEmailId);
-        editUserName = (EditText) findViewById(R.id.editUserName);
+        //editUserName = (EditText) findViewById(R.id.editUserName);
         editPassowrd = (EditText) findViewById(R.id.editPassowrd);
         editSecurityAnswer = (EditText) findViewById(R.id.editSecurityAnswer);
 
-        editEmailId.addTextChangedListener(emailWatcher);
+        //editEmailId.addTextChangedListener(emailWatcher);
 
         questionArrayList.add("What is your pet name?");
         questionArrayList.add("What is your school name?");
@@ -73,7 +79,7 @@ public class SingUpActivity extends AppCompatActivity {
         });
     }
 
-    private TextWatcher emailWatcher = new TextWatcher() {
+    /*private TextWatcher emailWatcher = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -88,14 +94,18 @@ public class SingUpActivity extends AppCompatActivity {
         public void afterTextChanged(Editable s) {
              editUserName.setText(editEmailId.getText());
         }
-    };
+    };*/
 
     public void buttonRegister(View view) {
 
-        if(editEmailId.getText().toString().length() == 0) {
-            Toast.makeText(this,"Please Enter Full Name",Toast.LENGTH_SHORT).show();
-        }else if(editUserName.getText().toString().length() == 0) {
-            Toast.makeText(this,"Please Enter User Name",Toast.LENGTH_SHORT).show();
+        if(editName.getText().toString().length() == 0) {
+            Toast.makeText(this,"Please Enter Name",Toast.LENGTH_SHORT).show();
+        }else if(editMobile.getText().toString().length() == 0) {
+            Toast.makeText(this,"Please Enter Mobile Number",Toast.LENGTH_SHORT).show();
+        }else if(editTerritory.getText().toString().length() == 0) {
+            Toast.makeText(this,"Please Enter Territory Details",Toast.LENGTH_SHORT).show();
+        } else if(editEmailId.getText().toString().length() == 0) {
+            Toast.makeText(this,"Please Enter Email Id",Toast.LENGTH_SHORT).show();
         }else if(editPassowrd.getText().toString().length() == 0) {
             Toast.makeText(this,"Please Enter Password",Toast.LENGTH_SHORT).show();
         }else if(editSecurityAnswer.getText().toString().length() == 0) {
@@ -105,11 +115,11 @@ public class SingUpActivity extends AppCompatActivity {
 
             User user = new User();
 
-            //editEmailId.addTextChangedListener(emailIdWatcher);
-
-
+            user.setName(editName.getText().toString());
+            user.setMobileNumber(editMobile.getText().toString());
+            user.setTerritory(editTerritory.getText().toString());
             user.setEmailID(editEmailId.getText().toString());
-            user.setUserName(editUserName.getText().toString());
+            //user.setUserName(editUserName.getText().toString());
             user.setUserPassword(editPassowrd.getText().toString());
             user.setSecurityQuestion(finalQuestion);
             user.setSecurityQuestionAnswer(editSecurityAnswer.getText().toString());
@@ -119,7 +129,7 @@ public class SingUpActivity extends AppCompatActivity {
 
 
                 SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-                preferences.edit().putString(LOGIN_USER_NAME,editUserName.getText().toString())
+                preferences.edit().putString(LOGIN_USER_NAME,editEmailId.getText().toString())
                         .putBoolean(FIRST_TIME_REGISTER,true)
                         .commit();
 
@@ -132,27 +142,4 @@ public class SingUpActivity extends AppCompatActivity {
         }
     }
 
-    /*private final TextWatcher emailIdWatcher = new TextWatcher() {
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-        }
-
-        public void onTextChanged(CharSequence s, int start, int before, int count) {
-            //textView.setVisibility(View.VISIBLE);
-
-            //editUserName.setText(s);
-
-        }
-
-        public void afterTextChanged(Editable s) {
-            *//*if (s.length() == 0) {
-               // textView.setVisibility(View.GONE);
-            } else{
-                //textView.setText("You have entered : " + passwordEditText.getText());
-            }*//*
-
-            editUserName.setText(s);
-        }
-    };*/
-
- }
+}
