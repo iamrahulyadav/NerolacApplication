@@ -56,11 +56,11 @@ public class SingUpActivity extends AppCompatActivity {
 
         //editEmailId.addTextChangedListener(emailWatcher);
 
-        questionArrayList.add("What is your pet name?");
-        questionArrayList.add("What is your school name?");
-        questionArrayList.add("What is your favourite food?");
-        questionArrayList.add("What is your favourite movie?");
-        questionArrayList.add("What is your favourite place?");
+        questionArrayList.add("     What is your pet name?");
+        questionArrayList.add("     What is your school name?");
+        questionArrayList.add("     What is your favourite food?");
+        questionArrayList.add("     What is your favourite movie?");
+        questionArrayList.add("     What is your favourite place?");
 
         spinnerSecurityQuestion = (Spinner) findViewById(R.id.spinnerSecurityQuestion);
         adapterSpinner = new ArrayAdapter<String>(this,R.layout.spinner,questionArrayList);
@@ -98,15 +98,18 @@ public class SingUpActivity extends AppCompatActivity {
 
     public void buttonRegister(View view) {
 
-        if(editName.getText().toString().length() == 0) {
+        if(editName.getText().toString().trim().length() == 0) {
             Toast.makeText(this,"Please Enter Name",Toast.LENGTH_SHORT).show();
-        }else if(editMobile.getText().toString().length() == 0) {
+        }else if(editMobile.getText().toString().trim().length() == 0) {
             Toast.makeText(this,"Please Enter Mobile Number",Toast.LENGTH_SHORT).show();
-        }else if(editTerritory.getText().toString().length() == 0) {
+        }else if(editTerritory.getText().toString().trim().length() == 0) {
             Toast.makeText(this,"Please Enter Territory Details",Toast.LENGTH_SHORT).show();
-        } else if(editEmailId.getText().toString().length() == 0) {
+        } else if(editEmailId.getText().toString().trim().length() == 0) {
             Toast.makeText(this,"Please Enter Email Id",Toast.LENGTH_SHORT).show();
-        }else if(editPassowrd.getText().toString().length() == 0) {
+        } else if(!(editEmailId.getText().toString().trim().contains("@nerolac.com"))) {
+            Toast.makeText(this,"Please Enter Valid Email Id",Toast.LENGTH_SHORT).show();
+        }
+        else if(editPassowrd.getText().toString().length() == 0) {
             Toast.makeText(this,"Please Enter Password",Toast.LENGTH_SHORT).show();
         }else if(editSecurityAnswer.getText().toString().length() == 0) {
             Toast.makeText(this,"Please the answer",Toast.LENGTH_SHORT).show();

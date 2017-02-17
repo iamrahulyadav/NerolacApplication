@@ -51,6 +51,8 @@
     </LinearLayout>
 
     <EditText
+        android:singleLine="true"
+        android:imeOptions="actionNext"
         android:id="@+id/editName"
         android:layout_width="match_parent"
         android:layout_height="55dp"
@@ -72,6 +74,9 @@
         android:weightSum="1">
 
         <EditText
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:maxLength="10"
             android:inputType="phone"
             android:id="@+id/editMobile"
             android:layout_width="wrap_content"
@@ -95,6 +100,8 @@
             android:layout_alignStart="@+id/editTerritory" />
 
         <EditText
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             android:id="@+id/editTerritory"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
@@ -110,6 +117,8 @@
 
 
     <EditText
+        android:imeOptions="actionNext"
+        android:singleLine="true"
         android:id="@+id/editEmailId"
         android:layout_width="match_parent"
         android:layout_height="55dp"
@@ -126,11 +135,13 @@
         android:id="@+id/editPassowrd"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
+        android:singleLine="true"
         android:layout_marginLeft="68dp"
         android:layout_marginTop="350dp"
         android:background="@drawable/username_box"
         android:hint="Create Password(6 Charachter)"
         android:inputType="textPassword"
+        android:imeOptions="actionNext"
         android:maxLength="6"
         android:paddingLeft="20dp"
         android:textColor="#000"
@@ -139,6 +150,7 @@
 
 
     <Spinner
+        android:dropDownWidth="400dp"
         android:layout_marginTop="420dp"
         android:background="@drawable/username_box"
         android:layout_marginLeft="70dp"
@@ -149,10 +161,12 @@
         android:layout_height="55dp"/>
 
     <EditText
+        android:singleLine="true"
         android:layout_marginTop="490dp"
         android:inputType="textPassword"
         android:id="@+id/editSecurityAnswer"
         android:layout_width="wrap_content"
+        android:imeOptions="actionDone"
         android:layout_marginLeft="70dp"
         android:paddingLeft="20dp"
         android:textColor="#000"

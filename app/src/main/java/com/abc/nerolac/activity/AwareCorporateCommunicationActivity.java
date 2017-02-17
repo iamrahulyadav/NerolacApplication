@@ -84,8 +84,8 @@ public class AwareCorporateCommunicationActivity extends AppCompatActivity {
         //modelArrayList.add(new AwareModel("Impression Newsletter", R.drawable.pdf_icon));
         //modelArrayList.add(new AwareModel("Corporate Communication",R.drawable.pdf_icon));
         modelArrayList.add(new AwareModel("Other Org Circulars", R.drawable.pdf_icon));
-        modelArrayList.add(new AwareModel("Old Impression Newsletter", R.drawable.pdf_icon));
-        modelArrayList.add(new AwareModel("Old Corporate Communication", R.drawable.pdf_icon));
+        /*modelArrayList.add(new AwareModel("Old Impression Newsletter", R.drawable.pdf_icon));
+        modelArrayList.add(new AwareModel("Old Corporate Communication", R.drawable.pdf_icon));*/
 
         listView = (ListView) findViewById(R.id.listView);
         awareAdapter = new AwareAdapter(this,modelArrayList);
